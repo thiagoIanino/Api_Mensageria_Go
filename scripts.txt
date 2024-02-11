@@ -1,0 +1,21 @@
+kafka
+//criar topico
+kafka-topics --bootstrap-server=localhost:9092 --topic=products --replication-factor 1  --create
+
+//entrar no console producer
+kafka-console-producer --bootstrap-server=localhost:9092 --topic=product
+
+//json enviado no producer
+{"name":"My produshs", "price": 105} 
+
+go
+//iniciar proj
+go run cmd/app/main.go
+
+mysql
+// entrar no banco
+ mysql -uroot -p products
+password -> root
+
+//criar tabela
+create table products (id varchar(255), name varchar(255), price float); 
